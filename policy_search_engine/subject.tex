@@ -42,12 +42,22 @@ OpenDataSoft \email{firstname.lastname@univ-nantes.fr}}
 
 \section*{Background and motivation}
 
-Seantic Web allow to publish data that help data sharing and data analysis. 
+Semantic Web expose thousands of datasets in a way that help data sharing and data analysis. Privacy policies are often attached to these datasets. These policies are described in RDF using specific vocabularies\cite{soto2015policies} and describe how to use data, what is permitted, obliged or prohibited. 
+
+On the one hand, data publisher are able to publish datasets with policies explicitely described in a machine readable format.  On the other hand, data consumers ( i.e human or machine ) are not able to express their profile ( i.e what they will do with the data ) and thus, cant discover only dataset matching their usage. 
 
 \section*{Objectives}
-
+Given a group of dataset in RDF format, the objectif of this supervised work will be to:
+\begin{itemize}
+	\item Express datasets policies with an ontology.
+	\item Find a way to describe data consumer's profile.
+	\item Implement a policy aware search engine that help data consumers to find dataset corresponding to their profile.
+	\item Evaluate your approach with differents metrics ( e.g completeness, execution time, etc. )
+\end{itemize}
 \section*{Remarks}
+You will have to find an elegant way to implement the search engine in order to minimize total search execution time and memory usage.
 
+You can find exemple\footnote{http://data.europa.eu/euodp/en/linked-data} of RDF search engine dataset on the web.
 
 \bibliographystyle{splncs03}
 \bibliography{subject}
